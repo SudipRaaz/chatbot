@@ -28,3 +28,11 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: load_wallet path
+  steps:
+  - intent: load_wallet
+  - action: utter_load_wallet
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_contact_support

@@ -90,15 +90,48 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: check_balance
+- intent: password_reset
   examples: |
-    - What is my balance?
-    - How much money do I have in my wallet?
-    - Show my wallet balance
+    - I want to reset my password
+    - Reset my password
+    - Change my password
+    - Change my password
 
-- intent: make_transaction
+- intent: pin_reset
   examples: |
-    - I want to transfer money
-    - Make a transaction
-    - Send $100 to John
+    - I want to reset my pin
+    - Reset my pin
+    - Change my pin
+    
+- intent: namaste_info
+  examples: |
+    - what is namaste pay?
+    - about namaste
+    - what is namaste?
+    - tell me about namaste
+    - namaste services
+    - namaste app
+    - namaste pay
+    - namaste wallet
+    - namaste bank
+    - namaste insurance
+    
+- intent: load_wallet
+  examples: |
+    - how to load wallet
+    - load wallet
+    - load money
+    - bank to wallet
+    - send to wallet
+    - receive money
+    - load money
+    - add money
+
+- intent: contact_support
+  examples: |
+    - contact support
+    - i want to connect 
+    - connect customer support
+    - call center
+    - Customer support
 

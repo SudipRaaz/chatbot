@@ -8,14 +8,19 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - password_reset
+  - pin_reset
+  - namaste_info
+  - load_wallet
+  - contact_support
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Here is something you could explore:"
+    image: "https://www.namastepay.com/consumerportal/#/"
 
   utter_did_that_help:
   - text: "Did that help you?"
@@ -27,7 +32,22 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a chat AI, powered by Sudip."
+
+  utter_password_reset:
+  - text: "To reset your password, please Contact (Toll Free): 18102150500 (NCELL) or 16600150500 (NTC)"
+
+  utter_pin_reset:
+  - text: "To reset your PIN, please Contact (Toll Free): 18102150500 (NCELL) or 16600150500 (NTC)"
+
+  utter_namaste_info:
+  - text: "Namaste Pay is a mobile wallet and payment platform that allows you to make payments, send money, and more."
+
+  utter_load_wallet:
+  - text: "Open Login to your Namaste Pay app, \n 1. Click on 'Load Wallet Icon' from home screen \n 2. Enter desired amount (Min Rs 100) \n 3. Choose Remarks \n 4. Click on 'Proceed' \n 5. Slide to Confirm on Slider \n 6. Enter your security PIN and click 'Confirm' "
+
+  utter_contact_support:
+  - text: "Please Contact our Customer Support Team at (Toll Free): 18102150500 (NCELL) or 16600150500 (NTC)"
 
 session_config:
   session_expiration_time: 60
