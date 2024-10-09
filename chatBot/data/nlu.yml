@@ -126,6 +126,7 @@ nlu:
     - receive money
     - load money
     - add money
+    - how do i load money in namaste pay
 
 - intent: contact_support
   examples: |
