@@ -3,136 +3,158 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
     - hi
-    - hello there
+    - hello
+    - hey
     - good morning
     - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
     - good afternoon
+    - hello there
+    - hey there
+    - hi there
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
     - see you later
+    - take care
+    - have a nice day
+    - bye bye
+    - catch you later
 
 - intent: affirm
   examples: |
     - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
+    - yeah
+    - sure
+    - absolutely
     - correct
+    - of course
+    - indeed
 
 - intent: deny
   examples: |
     - no
-    - n
+    - nope
+    - not really
     - never
     - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - that's not right
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
+    - I feel great
+    - I'm amazing
     - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfect
+    - I'm feeling awesome
+    - I'm happy
+    - fantastic
+    - life is good
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - I'm sad
+    - I feel terrible
+    - not feeling well
+    - I'm unhappy
+    - I'm disappointed
+    - I'm having a bad day
+    - things are not good
 
 - intent: bot_challenge
   examples: |
     - are you a bot?
+    - are you real?
     - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - am I talking to AI?
+    - is this a bot?
 
-- intent: password_reset
+# password forgot
+- intent: password_forgot
   examples: |
-    - I want to reset my password
-    - Reset my password
-    - Change my password
-    - Change my password
+    - forgot my password
+    - I forgot my login credentials
+    - how do I reset my password?
+    - I need a new password
+    - I lost my password
 
-- intent: pin_reset
+- intent: password_change
   examples: |
-    - I want to reset my pin
-    - Reset my pin
-    - Change my pin
-    
+    - change my password
+# pin change or pin forgot
+- intent: pin_change
+  examples: |
+    - reset my pin
+    - change my pin
+    - how do I change my PIN?
+    - I forgot my PIN
+    - I need a new PIN
+    - I lost my PIN
+
+# user blocked
+- intent: blocked
+  examples: |
+    - blocked
+    - my PIN is blocked
+    - I can't access my account
+
+# about namastepay 
 - intent: namaste_info
   examples: |
-    - what is namaste pay?
-    - about namaste
-    - what is namaste?
-    - tell me about namaste
-    - namaste services
-    - namaste app
-    - namaste pay
-    - namaste wallet
-    - namaste bank
-    - namaste insurance
-    
+    - what is Namaste Pay?
+    - tell me about Namaste
+    - Namaste services
+    - what does Namaste Pay do?
+    - Namaste app features
+    - Namaste wallet overview
+    - how does Namaste Pay work?
+
+# load wallet
 - intent: load_wallet
   examples: |
-    - how to load wallet
-    - load wallet
-    - load money
-    - bank to wallet
-    - send to wallet
-    - receive money
-    - load money
-    - add money
-    - how do i load money in namaste pay
+    - how to load my wallet
+    - add money to wallet
+    - transfer money to wallet
+    - load wallet from bank
+    - send money to my wallet
+    - top up wallet
+    - wallet deposit
+    
+# ussd section
+- intent: define_ussd
+  examples: |
+    - define USSD
+    - what is USSD?
+    - USSD code
+    - USSD codes
+
+- intent: ussd_error
+  examples: |
+    - USSD error
+    - USSD code error
+    - USSD error message
+    - USSD error code
+    - USSD “Service not available”, What do I do?
+
+- intent: ussd_services
+  examples: |
+    - what USSD services are available?
+    - how do I use USSD services?
+    - USSD code
+    - USSD code for Namaste Pay
+    - USSD code for wallet
+    - USSD code for Namaste app
+    - USSD code for wallet app
+
 
 - intent: contact_support
   examples: |
-    - contact support
-    - i want to connect 
-    - connect customer support
-    - call center
-    - Customer support
-
+    - contact customer support
+    - how can I reach support?
+    - I need help
+    - connect me to support
+    - call customer service
+    - speak to support
+    - connect to call center

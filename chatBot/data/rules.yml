@@ -12,15 +12,37 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: Password reset rule
+# Password change rules
+- rule: Password change rule
   steps:
-    - intent: password_reset
-    - action: utter_password_reset
+    - intent: password_change
+    - action: utter_password_change
 
-- rule: PIN reset rule
+- rule: Password forgot rule
   steps:
-    - intent: pin_reset
-    - action: utter_pin_reset
+    - intent: password_forgot
+    - action: utter_password_forgot
+
+# Pin related rules
+
+- rule: PIN change rule
+  steps:
+    - intent: pin_change
+    - action: utter_pin_change
+
+# user blocked
+- rule: access blocked rule
+  steps:
+    - intent: blocked
+    - action: utter_blocked
+
+- rule: ussd services rule
+  steps:
+    - intent: ussd_services
+    - action: utter_ussd_services
+
+
+# Namaste info
 
 - rule: Namaste info rule
   steps:
