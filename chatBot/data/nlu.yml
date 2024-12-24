@@ -129,6 +129,10 @@ nlu:
     - what is USSD?
     - USSD code
     - USSD codes
+    - USSD codes for Namaste Pay
+    - USSD codes for wallet
+    - USSD codes for Namaste app
+    - USSD codes for wallet app
 
 - intent: ussd_error
   examples: |

@@ -14,6 +14,9 @@ intents:
   - pin_change
   - namaste_info
   - load_wallet
+  - define_ussd
+  - ussd_error
+  - ussd_services
   - contact_support
 
 responses:

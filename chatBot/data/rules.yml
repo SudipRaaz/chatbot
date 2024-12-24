@@ -36,6 +36,11 @@ rules:
     - intent: blocked
     - action: utter_blocked
 
+- rule: ussd services 
+  steps:
+    - intent: ussd_services
+    - action: utter_ussd_services
+
 - rule: ussd services rule
   steps:
     - intent: ussd_services
